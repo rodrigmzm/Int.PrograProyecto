@@ -3,6 +3,8 @@
 Este programa tiene como proposito capturar la informacion de la gestion de un proyecto y presentarla al usuario mediante un informe.
 El código se situará en la clase Main; crear clases para capturar los datos de los módulos, para ser guardadas en arrays.
 
+- Al iniciar el programa contará con una opcion de inicio de sesión. 
+
 Contará con un menú principal donde se podra acceder a los siguientes módulos: 
 
 1. Módulo de gestion de clientes, capturar datos: Nombre, tipo de cliente (privado, publico o mixto).
