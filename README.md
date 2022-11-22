@@ -16,3 +16,5 @@ Se podria pedir mas datos dependiendo del tipo de desarrollo a escoger;
 Para luego hacer el calculo de la fecha de su conclusion.
 
 4. Módulo de Administración Histórica: mostrar el informe de toda la info recaudada.
+
+5. Salir.
