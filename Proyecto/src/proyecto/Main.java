@@ -79,7 +79,7 @@ public class Main {
 		}
 	    
 	    if (opcion == 3) {
-		    l.loguear();
+		    
 		}
 		
 	    }
