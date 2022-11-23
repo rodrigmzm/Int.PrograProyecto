@@ -20,3 +20,20 @@ Para luego calcular la fecha de conclusion del proyecto.
 4. Módulo de Informe: mostrar el informe de toda la info recaudada.
 
 5. Salir.
+
+El informe finalizado con toda la información quedaría de la siguiente manera:  
+
+-Nombre del cliente
+
+-Nombre del proyecto
+
+-Tipo de cliente
+
+-Lenguaje de programación
+
+
+-Fecha de inicialización
+
+-Tiempo de trabajo en meses
+
+-Fecha de finalización
