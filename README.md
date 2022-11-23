@@ -12,8 +12,8 @@ Contará con un menú principal donde se podra acceder a los siguientes módulos
 2. Módulo de Gestion del Proyecto, capturar datos: nombre del proyecto, lenguaje de programacion, tipo de desarrollo que se aplicará (CVCDS, prototipos. Scrum);
 Se podria pedir mas datos dependiendo del tipo de desarrollo a escoger;
 
-3. Módulo de administracion historica: Se le adjuntará la fecha de inicializacion del proyecto y en cuantos dias se estima finalizarlo.
-Para luego hacer el calculo de la fecha de su conclusion.
+3. Módulo de administracion historica: Se le adjuntará la fecha de inicializacion del proyecto y la cantidad de dias que se estima finalizarlo.
+Para luego calcular la fecha de conclusion del proyecto.
 
 4. Módulo de Informe: mostrar el informe de toda la info recaudada.
 
