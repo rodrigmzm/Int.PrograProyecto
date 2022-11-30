@@ -9,8 +9,16 @@ Contará con un menú principal donde se podra acceder a los siguientes módulos
 
 1. Módulo de gestion de clientes, capturar datos: Nombre, tipo de cliente (privado, publico o mixto).
 
-2. Módulo de Gestion del Proyecto, capturar datos: nombre del proyecto, lenguaje de programacion, tipo de desarrollo que se aplicará (CVCDS, prototipos. Scrum);
+2. Módulo de Gestion del Proyecto, capturar datos: nombre del proyecto, presupuesto inicial, lenguaje de programacion, tipo de desarrollo que se aplicará (CVCDS, prototipos. Scrum);
 Se podria pedir mas datos dependiendo del tipo de desarrollo a escoger.
+
+Dependiendo del tipo de desarrollo se aplicará un aumento en el presupuesto inicial. 
+
+- CVCDS = 5%
+
+- Prototipos = 10%
+
+- Scrum = 7%
 
 [**Investigar como funciona cada tipo desarrollo de proyectos**]
 
