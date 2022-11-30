@@ -20,7 +20,7 @@ Dependiendo del tipo de desarrollo se aplicará un aumento en el presupuesto ini
 
 - Scrum = 7%
 
-[**Investigar como funciona cada tipo desarrollo de proyectos**]
+[**Investigar como funciona cada tipo desarrollo de proyectos en caso de agregar info de ellos**]
 
 3. Módulo de administracion historica: Se le adjuntará la fecha de inicializacion del proyecto y la cantidad de dias que se estima finalizarlo.
 Para luego calcular la fecha de conclusion del proyecto.
