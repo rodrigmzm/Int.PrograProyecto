@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Logueo l = new Logueo();
-	l.loguear();
+	//l.loguear();
 	Clientes c[] = new Clientes[1];
 	Proyectos p[] = new Proyectos[1];
 	Historica h[] = new Historica[1];
@@ -50,29 +50,39 @@ public class Main {
 		    String nomProyecto = JOptionPane.showInputDialog(null,
 			    "Nombre del proyecto: ","Módulo de gestión del proyecto",
 			    JOptionPane.QUESTION_MESSAGE);
+		    int presupuesto = Integer.parseInt(JOptionPane.showInputDialog(null,
+			    "Presupuesto inicial del proyecto: ",
+			    "Módulo de gestión del proyecto", JOptionPane.QUESTION_MESSAGE));
 		    String lenguaje = JOptionPane.showInputDialog(null,
 			    "Lenguaje de programación"
 			+" a utilizar: ","Módulo de gestión del proyecto",
 			JOptionPane.QUESTION_MESSAGE);
 		    int des= Integer.parseInt(JOptionPane.showInputDialog(null,
 			    "¿Qué tipo de desarrollo"
-			+" aplicará en el proyecto?\n[1] CVCDS\n[2]Prototipos\n[3]Scrum",
+			+" aplicará en el proyecto?\n[1] CVCDS (5% de aumento al presupuesto)"
+			+ "\n[2]Prototipos (10% de aumento al presupuesto)"
+			+ "\n[3]Scrum (7% de aumento al presupuesto)",
 			    "Módulo de gestion del proyecto",
 			JOptionPane.QUESTION_MESSAGE));
 		    String desarrollo = "";
+		    double aumento = 0;
 		    /*Se podria agregar mas informacion dependiendo de la opcion
 		    que se escoja*/
 		    if (des == 1) {
 			desarrollo = "CVCDS";
+			aumento = presupuesto+(presupuesto*0.5);
 		    }
 		    if (des == 2) {
 			desarrollo = "Prototipos";
+			aumento = presupuesto+(presupuesto*0.10);
 		    }
 		    if (des == 3) {
 			desarrollo = "Scrum";
+			aumento = presupuesto+(presupuesto*0.7);
 		    }
 		    
-		    p[i] = new Proyectos (nomProyecto, lenguaje, desarrollo);
+		    p[i] = new Proyectos (nomProyecto, lenguaje, desarrollo,
+		    presupuesto, aumento);
 		}
 	    }
 	    if (opcion == 3) {
@@ -114,6 +124,8 @@ public class Main {
 			    "Nombre del cliente: "+c[i].getNombre()+"\nNombre del proyecto: "
 			    +p[i].getNomProyecto()+"\nTipo de cliente: "+c[i].getTipo()
 			    +"\nLenguaje de programación: "+p[i].getLenguaje()
+			    +"\nPresupuesto inicial del proyecto: "+p[i].getPresupuesto()
+			    +"\nPresupuesto final con el aumento: "+p[i].getAumento()
 			    +"\nFecha de inicialización del proyecto: "+h[i].getDia()+"/"+h[i].getMes()
 			    +"/"+h[i].getYear()+"\nTiempo de trabajo en meses: "+h[i].getConclusion()
 			    +" meses"+"\nFecha de finalización del proyecto: "+h[i].getDia()
@@ -127,7 +139,7 @@ public class Main {
 			    +"\nFecha de inicialización del proyecto: "+h[i].getDia()+"/"+h[i].getMes()
 			    +"/"+h[i].getYear()+"\nTiempo de trabajo en meses: "+h[i].getConclusion()
 			    +" meses"+"\nFecha de finalización del proyecto: "+h[i].getDia()
-			    +"/"+h[i].getNuevoMes()+"/"+h[i].getNewYear());
+			    +"/"+h[i].getNuevoMes()+"/"+h[i].getNewYear()+"\n");
 		}
 		
 	    }
